@@ -1,0 +1,6 @@
+
+services:
+  analyzer:
+    build: .
+    container_name: debian-analyzer
+    entrypoint: ["python", "package_statistics.py", "amd64"]
